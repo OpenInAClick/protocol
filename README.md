@@ -11,7 +11,7 @@ Specification:
 Server (Software using the protocol):
 This will be the data sending to a locker
 - Required: Unique ID of the locker
-- Required: Requestcode ('1' = 'open', 2='status-request')
+- Required: Requestcode
 - Optional: Server name/version
 
 Client (Locker):
@@ -21,3 +21,11 @@ If (not required) returning data to the server from the locker can send the foll
 - Optional: Vendor
 - Optional: Product type
 - Optional: locker client name/version
+
+Request codes:
+1 = open
+2 = close
+3 = status-request
+
+Status codes:
+1 = open
